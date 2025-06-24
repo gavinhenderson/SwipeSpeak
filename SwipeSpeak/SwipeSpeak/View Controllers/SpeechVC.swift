@@ -8,7 +8,6 @@
 
 import UIKit
 import AVFoundation
-import FirebaseAnalytics
 
 class SpeechVC: UITableViewController  {
     
@@ -55,14 +54,13 @@ class SpeechVC: UITableViewController  {
         
         SpeechSynthesizer.shared.speak(NSLocalizedString("Speaking Rate", comment: ""))
         
-        Analytics.logEvent("settings.speech.rate", parameters: ["value": String(sender.value)])
     }
     
     @IBAction func volumeSliderValueChanged(_ sender: UISlider) {
         volumeLabel.text = "\(Int(sender.value*100))%"
         UserPreferences.shared.speechVolume = sender.value
         
-        Analytics.logEvent("settings.speech.volume", parameters: ["value": String(sender.value)])
+
     }
     
 }

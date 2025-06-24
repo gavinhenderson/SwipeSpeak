@@ -9,7 +9,6 @@
 
 import UIKit
 import DZNEmptyDataSet
-import FirebaseAnalytics
 
 class SentenceHistoryVC: UITableViewController {
     
@@ -129,7 +128,6 @@ class SentenceHistoryVC: UITableViewController {
         
         let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel)
         let clearAction = UIAlertAction(title: NSLocalizedString("Clear", comment: ""), style: .destructive) { [weak self] (action: UIAlertAction) in
-            Analytics.logEvent("clear_sentence_history", parameters: nil)
             
             UserPreferences.shared.clearSentenceHistory()
             

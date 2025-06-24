@@ -61,7 +61,7 @@ DEPENDENCIES:
   - Zephyr (= 3.2.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Crashlytics
     - DZNEmptyDataSet
     - Fabric
@@ -76,9 +76,9 @@ SPEC REPOS:
     - Zephyr
 
 SPEC CHECKSUMS:
-  Crashlytics: ccaac42660eb9351b9960c0d66106b0bcf99f4fa
+  Crashlytics: 08e50236e4919fd84e089971c8372d46fe83a8ad
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
-  Fabric: f233c9492b3bbc1f04e3882986740f7988a58edb
+  Fabric: e2bc245c5ad6dd63f36d72410f34bc15309744e0
   Firebase: a870ed114d769b424021a0c8ddb0c86c3250a0c5
   FirebaseAnalytics: 361594968a84a04d9598ef0f2e769d3735cd03de
   FirebaseCore: 27bd80e5bfaaf9552a1f5cacb4c7e8bb925bab22
@@ -91,4 +91,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: ba3fd3f1bbe72c05e5c0e1cd6b597f5c642f12eb
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.16.2

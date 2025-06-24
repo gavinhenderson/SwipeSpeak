@@ -9,7 +9,6 @@
 
 import Foundation
 import UIKit
-import FirebaseAnalytics
 import SafariServices
 
 class SettingsVC: UITableViewController {
@@ -70,7 +69,6 @@ class SettingsVC: UITableViewController {
         let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel)
         let clearAction = UIAlertAction(title: NSLocalizedString("Clear", comment: ""), style: .destructive) { (action: UIAlertAction) in
             UserPreferences.shared.clearWordRating()
-            Analytics.logEvent("settings.reset_word_ranking", parameters: nil)
         }
         
         alertController.addAction(cancelAction)
@@ -82,19 +80,19 @@ class SettingsVC: UITableViewController {
     @IBAction func switchValueChanged(_ sender: UISwitch) {
         if sender === announceLettersCountSwitch {
             UserPreferences.shared.announceLettersCount = sender.isOn
-            Analytics.logEvent("settings.announce_letters_direction", parameters: ["is_on": sender.isOn.description])
+
         } else if sender === vibrateSwitch {
             UserPreferences.shared.vibrate = sender.isOn
-            Analytics.logEvent("settings.vibrate", parameters: ["is_on": sender.isOn.description])
+
         } else if sender === longerPauseBetweenLettersSwitch {
             UserPreferences.shared.longerPauseBetweenLetters = sender.isOn
-            Analytics.logEvent("settings.longer_pause_between_letters", parameters: ["is_on": sender.isOn.description])
+
         } else if sender === enableAudioFeedbackSwitch {
             UserPreferences.shared.audioFeedback = sender.isOn
-            Analytics.logEvent("settings.enable_audio_feedback", parameters: ["is_on": sender.isOn.description])
+
         } else if sender === enableCouldSyncSwitch {
             UserPreferences.shared.enableCloudSync = sender.isOn
-            Analytics.logEvent("settings.enable_cloud_sync", parameters: ["is_on": sender.isOn.description])
+
         }
     }
     

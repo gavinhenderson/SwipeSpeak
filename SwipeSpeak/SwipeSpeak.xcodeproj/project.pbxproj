@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31656ADF20EEEAD700059AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31656ADE20EEEAD700059AFA /* Assets.xcassets */; };
+		86B885BB2E0B3ADA004BB25C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 86B885BA2E0B39E5004BB25C /* PrivacyInfo.xcprivacy */; };
 		B928F1E01FB49EEF00302E70 /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B928F1DF1FB49EEF00302E70 /* SpeechSynthesizer.swift */; };
 		B93BCCA01FD7F8DC007BFCC3 /* AcknowledgementsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BCC9F1FD7F8DC007BFCC3 /* AcknowledgementsVC.swift */; };
 		B93BCCA21FD7FA71007BFCC3 /* Pods-SwipeSpeak-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = B93BCC9E1FD7F831007BFCC3 /* Pods-SwipeSpeak-acknowledgements.markdown */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		31656ADE20EEEAD700059AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		816F1DCA7BB8E6CB0883B7A2 /* Pods-SwipeSpeak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeSpeak.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwipeSpeak/Pods-SwipeSpeak.debug.xcconfig"; sourceTree = "<group>"; };
+		86B885BA2E0B39E5004BB25C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		B928F1DF1FB49EEF00302E70 /* SpeechSynthesizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSynthesizer.swift; sourceTree = "<group>"; };
 		B93BCC9E1FD7F831007BFCC3 /* Pods-SwipeSpeak-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-SwipeSpeak-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B93BCC9F1FD7F8DC007BFCC3 /* AcknowledgementsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsVC.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				DA07001A1F0DA0C2003BEE3D /* Utility.swift */,
 				B95CB41C1FAFC50E00F705EB /* UserPreferences.swift */,
 				B928F1DF1FB49EEF00302E70 /* SpeechSynthesizer.swift */,
+				86B885BA2E0B39E5004BB25C /* PrivacyInfo.xcprivacy */,
 				B98C67B51FD87AD600C35FE5 /* GoogleService-Info.plist */,
 				B93BCCA11FD7F8E5007BFCC3 /* Resources */,
 			);
@@ -173,7 +176,6 @@
 				DA57B1F31F0D9EC100895E18 /* Frameworks */,
 				DA57B1F41F0D9EC100895E18 /* Resources */,
 				BF9DC38AD4ACB38871A3E0D0 /* [CP] Embed Pods Frameworks */,
-				B9C89C842064D509008D12E6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -236,6 +238,7 @@
 				B9E23BDB1FEAAFAD00EE3998 /* word_frequency_english_ucrel.csv in Resources */,
 				31656ADF20EEEAD700059AFA /* Assets.xcassets in Resources */,
 				B95CB4191FAFBCAA00F705EB /* Settings.storyboard in Resources */,
+				86B885BB2E0B3ADA004BB25C /* PrivacyInfo.xcprivacy in Resources */,
 				B98C67B61FD87AD600C35FE5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,19 +246,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B9C89C842064D509008D12E6 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
-		};
 		BF9DC38AD4ACB38871A3E0D0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -264,18 +254,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwipeSpeak/Pods-SwipeSpeak-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/MarkdownView/MarkdownView.framework",
 				"${BUILT_PRODUCTS_DIR}/Zephyr/Zephyr.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarkdownView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zephyr.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

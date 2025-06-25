@@ -15,7 +15,7 @@ typealias KeyboardKey = Int
 
 struct Constants {
     
-    static let tutorialURL = URL(string: "https://teamgleason.github.io/SwipeSpeak/")!
+    static let tutorialURL = URL(string: "https://gavinhenderson.github.io/SwipeSpeak/")!
     static let tutorialShownKey = "TutorialShownKey"
 
     static let defaultWordFrequency = 99999

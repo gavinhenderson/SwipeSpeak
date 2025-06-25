@@ -10,7 +10,7 @@ SwipeSpeak is an open-source project created by <a href="http://www.teamgleason.
 
 # Video Overview
 
-See our [overview page](https://teamgleason.github.io/SwipeSpeak/) at: https://teamgleason.github.io/SwipeSpeak/
+See our [overview page](https://gavinhenderson.github.io/SwipeSpeak/) at: https://gavinhenderson.github.io/SwipeSpeak/
 
 # Typing with SwipeSpeak
 
